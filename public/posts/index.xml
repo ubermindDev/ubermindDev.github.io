@@ -6,14 +6,53 @@
     <description>Recent content in Posts on My New Hugo Project</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Apr 2026 23:45:07 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
+      <title></title>
       <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Thu, 02 Apr 2026 23:45:07 +0900</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description></description>
+      <description>&lt;p&gt;baseURL = &amp;ldquo;&lt;a href=&#34;https://ubermindDev.github.io/%22&#34;&gt;https://ubermindDev.github.io/&amp;quot;&lt;/a&gt;
+languageCode = &amp;ldquo;ko-kr&amp;rdquo;
+title = &amp;ldquo;ubermind.dev&amp;rdquo; # 블로그 상단 제목
+theme = &amp;ldquo;PaperMod&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;[params]
+env = &amp;ldquo;production&amp;rdquo;
+title = &amp;ldquo;ubermind.dev&amp;rdquo;
+description = &amp;ldquo;3년 차 풀스택 개발자의 기술 여정&amp;rdquo;
+keywords = [&amp;ldquo;Developer&amp;rdquo;, &amp;ldquo;Java&amp;rdquo;, &amp;ldquo;Python&amp;rdquo;, &amp;ldquo;Stock AI&amp;rdquo;]
+author = &amp;ldquo;ubermind&amp;rdquo;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# 다크 모드 설정 (자동으로 시스템 설정 따라감)
+defaultTheme = &amp;quot;auto&amp;quot; 
+
+# 메인 화면 프로필 설정
+[params.profileMode]
+    enabled = true
+    title = &amp;quot;Hello, I&#39;m ubermind! 👋&amp;quot;
+    subtitle = &amp;quot;IT Developer | AI Stock Project | Trail Runner&amp;quot;
+    imageUrl = &amp;quot;https://github.com/ubermindDev.png&amp;quot; # 본인 깃허브 프로필 사진 자동 연동
+    imageWidth = 120
+    imageHeight = 120
+    
+    [[params.profileMode.buttons]]
+        name = &amp;quot;Posts&amp;quot;
+        url = &amp;quot;posts&amp;quot;
+    [[params.profileMode.buttons]]
+        name = &amp;quot;Github&amp;quot;
+        url = &amp;quot;https://github.com/ubermindDev&amp;quot;
+
+# 소셜 아이콘 (푸터에 표시)
+[[params.socialIcons]]
+    name = &amp;quot;github&amp;quot;
+    url = &amp;quot;https://github.com/ubermindDev&amp;quot;
+[[params.socialIcons]]
+    name = &amp;quot;email&amp;quot;
+    url = &amp;quot;mailto:ckdgns1447@gmail.com&amp;quot;
+
+# 기타 편의 기능
+showCodeCopyButtons = true # 코드 복사 버튼
+showReadingTime = true    # 읽는 시간 표시
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>
 </rss>

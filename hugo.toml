@@ -1,4 +1,44 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
-theme = "PaperMod"
+baseURL = "https://ubermindDev.github.io/"
+languageCode = "ko-kr"
+title = "ubermind.dev"
+theme = "stack"
+
+[params]
+    description = "3년 차 풀스택 개발자의 기술 여정 | AI 주식 분석 & 트레일 러닝"
+    
+    # 1. 왼쪽 사이드바 프로필 (인스타 프로필 느낌)
+    [params.sidebar]
+        avatar = "https://github.com/ubermindDev.png" # 깃허브 프로필 사진 자동 연동
+        title = "ubermind"
+        subtitle = "IT Developer | AI Stock | Trail Runner"
+
+    # 2. 메인 화면 격자(Grid) 설정 (인스타 피드 느낌)
+    [params.main]
+        layout = "grid" 
+        showPostReadingTime = true
+
+    # 3. 다크모드 설정 (기본을 다크로 설정해서 힙하게!)
+    [params.darkmode]
+        toggle = true
+        default = "dark"
+
+    # 4. 소셜 링크
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/ubermindDev"
+    [[params.socialIcons]]
+        name = "email"
+        url = "mailto:ckdgns1447@gmail.com"
+
+# 사이드바 메뉴 버튼
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+    params = { icon = "home" }
+
+[[menu.main]]
+    name = "Archive"
+    url = "/posts/"
+    weight = 2
+    params = { icon = "archive" }
