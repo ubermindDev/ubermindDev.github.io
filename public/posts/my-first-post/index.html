@@ -1,288 +1,325 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="ko-kr" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="AI 주식 분석 프로젝트와 개발 기록을 담는 공간입니다.">
+<title>나의 힙스터 개발 블로그 데뷔</title>
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
-<title>My New Hugo Project</title>
-<meta name="keywords" content="">
-<meta name="description" content="baseURL = &ldquo;https://ubermindDev.github.io/&quot;
-languageCode = &ldquo;ko-kr&rdquo;
-title = &ldquo;ubermind.dev&rdquo; # 블로그 상단 제목
-theme = &ldquo;PaperMod&rdquo;
-[params]
-env = &ldquo;production&rdquo;
-title = &ldquo;ubermind.dev&rdquo;
-description = &ldquo;3년 차 풀스택 개발자의 기술 여정&rdquo;
-keywords = [&ldquo;Developer&rdquo;, &ldquo;Java&rdquo;, &ldquo;Python&rdquo;, &ldquo;Stock AI&rdquo;]
-author = &ldquo;ubermind&rdquo;
-# 다크 모드 설정 (자동으로 시스템 설정 따라감)
-defaultTheme = &quot;auto&quot; 
 
-# 메인 화면 프로필 설정
-[params.profileMode]
-    enabled = true
-    title = &quot;Hello, I&#39;m ubermind! 👋&quot;
-    subtitle = &quot;IT Developer | AI Stock Project | Trail Runner&quot;
-    imageUrl = &quot;https://github.com/ubermindDev.png&quot; # 본인 깃허브 프로필 사진 자동 연동
-    imageWidth = 120
-    imageHeight = 120
-    
-    [[params.profileMode.buttons]]
-        name = &quot;Posts&quot;
-        url = &quot;posts&quot;
-    [[params.profileMode.buttons]]
-        name = &quot;Github&quot;
-        url = &quot;https://github.com/ubermindDev&quot;
+<link rel="canonical" href="https://ubermindDev.github.io/posts/my-first-post/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
 
-# 소셜 아이콘 (푸터에 표시)
-[[params.socialIcons]]
-    name = &quot;github&quot;
-    url = &quot;https://github.com/ubermindDev&quot;
-[[params.socialIcons]]
-    name = &quot;email&quot;
-    url = &quot;mailto:ckdgns1447@gmail.com&quot;
 
-# 기타 편의 기능
-showCodeCopyButtons = true # 코드 복사 버튼
-showReadingTime = true    # 읽는 시간 표시
-">
-<meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/my-first-post/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.4ef2299ae814559c4055cd3d15919aff78737e44fa7af337c506246832ba458a.css" integrity="sha256-TvIpmugUVZxAVc09FZGa/3hzfkT6evM3xQYkaDK6RYo=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/my-first-post/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
+<link rel="stylesheet" href="/scss/style.min.389e156f5e9bb13df5a924cfa99dfb9c39f3e01e68d9e146cd65bdae963be145.css"><meta property='og:title' content="나의 힙스터 개발 블로그 데뷔">
+<meta property='og:description' content="AI 주식 분석 프로젝트와 개발 기록을 담는 공간입니다.">
+<meta property='og:url' content='https://ubermindDev.github.io/posts/my-first-post/'>
+<meta property='og:site_name' content='ubermind.dev'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2026-04-03T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-04-03T00:00:00&#43;00:00'/><meta property='og:image' content='https://ubermindDev.github.io/' />
+<meta name="twitter:title" content="나의 힙스터 개발 블로그 데뷔">
+<meta name="twitter:description" content="AI 주식 분석 프로젝트와 개발 기록을 담는 공간입니다."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://ubermindDev.github.io/' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
         }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
-    </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
+    })();
 </script>
-</head>
-<body id="top">
-    <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Project (Alt + H)">My New Hugo Project</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        <figure class="site-avatar">
+                <a href="/">
+                    <img src="https://github.com/ubermindDev.png" 
+                        width="420"
+                        height="420"
+                        class="site-logo"
+                        loading="lazy"
+                        alt="Avatar">
+                </a>
+                
+            </figure>
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">ubermind.dev</a></h1>
+            <h2 class="site-description">데이터로 세상을 해석합니다 ☕ | AI Stock &amp; Code | Trail Runner</h2>
         </div>
-        <ul id="menu">
-        </ul>
-    </nav>
-</header>
-<main class="main">
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                <span>Feed</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/posts/' >
+                
+                <span>Archive</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/categories/stock-analysis/' >
+                
+                <span>Stock Analysis</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/categories/trail-running/' >
+                
+                <span>Trail Running</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
 
-<article class="post-single">
-  <header class="post-header">
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
     
-    <h1 class="post-title entry-hint-parent">
-      
-    </h1>
-    <div class="post-meta">
 
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+    <div class="article-image">
+        <a href="/posts/my-first-post/">
+            <img alt="Featured image of post 나의 힙스터 개발 블로그 데뷔" height="4912" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b" srcset="/photo-1550751827-4bd374c3f58b_12564432871257247181_hu_1ec6a18c8da6452b.jpg 800w, /photo-1550751827-4bd374c3f58b_12564432871257247181_hu_9c8a29d658c31e59.jpg 1600w, /photo-1550751827-4bd374c3f58b_12564432871257247181_hu_de16c5930857cc50.jpg 2400w, https://images.unsplash.com/photo-1550751827-4bd374c3f58b 7360w" width="7360">
+        </a>
+    </div>
+    
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/my-first-post/">나의 힙스터 개발 블로그 데뷔</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            AI 주식 분석 프로젝트와 개발 기록을 담는 공간입니다.
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    <footer class="article-meta">
+        
+            <div class="inline-meta">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                    <time class="article-time--published" datetime='2026-04-03T00:00:00Z'>Friday, April 3, 2026</time>
+                
+
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                    <time class="article-time--reading">
+                        1 minute read
+                    </time>
+                
+            </div>
+        
+
+        
+
+        
+    </footer>
+    
 </div>
-  </header> 
-  <div class="post-content"><p>baseURL = &ldquo;<a href="https://ubermindDev.github.io/%22">https://ubermindDev.github.io/&quot;</a>
-languageCode = &ldquo;ko-kr&rdquo;
-title = &ldquo;ubermind.dev&rdquo; # 블로그 상단 제목
-theme = &ldquo;PaperMod&rdquo;</p>
-<p>[params]
-env = &ldquo;production&rdquo;
-title = &ldquo;ubermind.dev&rdquo;
-description = &ldquo;3년 차 풀스택 개발자의 기술 여정&rdquo;
-keywords = [&ldquo;Developer&rdquo;, &ldquo;Java&rdquo;, &ldquo;Python&rdquo;, &ldquo;Stock AI&rdquo;]
-author = &ldquo;ubermind&rdquo;</p>
-<pre><code># 다크 모드 설정 (자동으로 시스템 설정 따라감)
-defaultTheme = &quot;auto&quot; 
 
-# 메인 화면 프로필 설정
-[params.profileMode]
-    enabled = true
-    title = &quot;Hello, I'm ubermind! 👋&quot;
-    subtitle = &quot;IT Developer | AI Stock Project | Trail Runner&quot;
-    imageUrl = &quot;https://github.com/ubermindDev.png&quot; # 본인 깃허브 프로필 사진 자동 연동
-    imageWidth = 120
-    imageHeight = 120
+</header>
+
     
-    [[params.profileMode.buttons]]
-        name = &quot;Posts&quot;
-        url = &quot;posts&quot;
-    [[params.profileMode.buttons]]
-        name = &quot;Github&quot;
-        url = &quot;https://github.com/ubermindDev&quot;
 
-# 소셜 아이콘 (푸터에 표시)
-[[params.socialIcons]]
-    name = &quot;github&quot;
-    url = &quot;https://github.com/ubermindDev&quot;
-[[params.socialIcons]]
-    name = &quot;email&quot;
-    url = &quot;mailto:ckdgns1447@gmail.com&quot;
+    <section class="article-content">
+    
+    
+    <h2 id="-welcome-to-uberminddev">🚀 Welcome to ubermind.dev
+</h2><p>안녕하세요! 33살 개발자 <strong>ubermind</strong>입니다.
+통신사 결제 시스템 개발자로 일하며, 개인적으로는 <strong>AI 주식 분석</strong>에 빠져 있습니다.</p>
+<p>이 블로그는 저의 <strong>기술적 도전</strong>과 <strong>성장의 기록</strong>을 가장 멋진 방식으로 남기기 위해 만들었습니다.</p>
+<h3 id="-tech--interests">🛠 Tech &amp; Interests
+</h3><ul>
+<li><strong>Dev</strong>: Java, Python, Oracle, Spring Boot</li>
+<li><strong>Side</strong>: AI Stock Analysis, Data Automation</li>
+<li><strong>Life</strong>: Trail Running (Jeju UTMB Challenger)</li>
+</ul>
+<p>앞으로 이곳에서 자주 만나요!</p>
 
-# 기타 편의 기능
-showCodeCopyButtons = true # 코드 복사 버튼
-showReadingTime = true    # 읽는 시간 표시
-</code></pre>
+</section>
 
 
-  </div>
+    <footer class="article-meta article-footer">
+    
 
-  <footer class="post-footer">
-    <ul class="post-tags">
-    </ul>
-  </footer>
+    </footer>
+
+
+    
 </article>
-    </main>
+
     
-<footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">My New Hugo Project</a></span> · 
 
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
+    
 
-<script>
-    let menu = document.getElementById('menu');
-    if (menu) {
+     
+    
         
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+        <div class="disqus-container">
+    
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
     }
+</style>
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
 <script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
         }
     })
-
 </script>
-</body>
+    
 
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 ubermind.dev
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="4.0.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+
+
+
+<script type="module">
+    import gallery from '\/ts\/gallery.js';
+
+    const articleContent = document.querySelector('.article-content');
+    const shouldLoad = articleContent && (articleContent.querySelectorAll('figure').length > 0 || articleContent.querySelectorAll('img.gallery-image').length > 0);
+    
+    if (shouldLoad) {
+        gallery(articleContent);
+
+        const PhotoSwipeLightbox = (await import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js")).default;
+        const styleHref = "https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.css";
+
+        const styleTag = document.createElement('link');
+        styleTag.rel = 'stylesheet';
+        styleTag.href = styleHref;
+        document.head.appendChild(styleTag);
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallerySelector: '.article-content',
+            childSelector: 'figure a.image-link',
+            pswpModule: () => import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js")
+        });
+        lightbox.init();
+    }
+</script>
+    
+
+            </main>
+        </div>
+        
+<script type="text/javascript" src="/ts/main.acaf849f2b273f6a8368a58b001f336738d0c948d92e79b116467d0c7515f932.js" defer></script>
+
+
+    </body>
 </html>

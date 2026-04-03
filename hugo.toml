@@ -10,7 +10,7 @@ theme = "stack"
     [params.sidebar]
         avatar = "https://github.com/ubermindDev.png"
         title = "ubermind"
-        subtitle = "IT Developer | 33yo | AI Project"
+        subtitle = "데이터로 세상을 해석합니다 ☕ | AI Stock & Code | Trail Runner"
 
     # [인스타 느낌 2] 메인 화면 격자(Grid) 카드 레이아웃
     [params.main]
@@ -36,3 +36,11 @@ theme = "stack"
     name = "Archive"
     url = "/posts/"
     weight = 2
+[[menu.main]]
+    name = "Stock Analysis"
+    url = "/categories/stock-analysis/"
+    weight = 3
+[[menu.main]]
+    name = "Trail Running"
+    url = "/categories/trail-running/"
+    weight = 4

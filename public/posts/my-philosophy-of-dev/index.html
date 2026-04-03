@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko-kr" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="33살 개발자, 매일의 한계를 넘어서는 '자기 극복(Übermensch)'의 여정">
+<title>데이터로 해석하는 삶: 니체와 트레일 러닝, 그리고 AI 개발</title>
+
+
+<link rel="canonical" href="http://localhost:1313/posts/my-philosophy-of-dev/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+
+
+<link rel="stylesheet" href="/scss/style.min.389e156f5e9bb13df5a924cfa99dfb9c39f3e01e68d9e146cd65bdae963be145.css"><meta property='og:title' content="데이터로 해석하는 삶: 니체와 트레일 러닝, 그리고 AI 개발">
+<meta property='og:description' content="33살 개발자, 매일의 한계를 넘어서는 '자기 극복(Übermensch)'의 여정">
+<meta property='og:url' content='http://localhost:1313/posts/my-philosophy-of-dev/'>
+<meta property='og:site_name' content='ubermind.dev'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Philosophy' /><meta property='article:tag' content='Running' /><meta property='article:tag' content='AI' /><meta property='article:published_time' content='2026-04-03T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-04-03T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/' />
+<meta name="twitter:title" content="데이터로 해석하는 삶: 니체와 트레일 러닝, 그리고 AI 개발">
+<meta name="twitter:description" content="33살 개발자, 매일의 한계를 넘어서는 '자기 극복(Übermensch)'의 여정"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        <figure class="site-avatar">
+                <a href="/">
+                    <img src="https://github.com/ubermindDev.png" 
+                        width="420"
+                        height="420"
+                        class="site-logo"
+                        loading="lazy"
+                        alt="Avatar">
+                </a>
+                
+            </figure>
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">ubermind.dev</a></h1>
+            <h2 class="site-description">데이터로 세상을 해석합니다 ☕ | AI Stock &amp; Code | Trail Runner</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                <span>Feed</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/posts/' >
+                
+                <span>Archive</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/categories/stock-analysis/' >
+                
+                <span>Stock Analysis</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/categories/trail-running/' >
+                
+                <span>Trail Running</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+    <div class="article-image">
+        <a href="/posts/my-philosophy-of-dev/">
+            <img alt="Featured image of post 데이터로 해석하는 삶: 니체와 트레일 러닝, 그리고 AI 개발" height="800" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200" srcset="/photo-1464822759023-fed622ff2c3b_2831194786336172903_hu_780563489d9f12e8.jpg 800w, https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200 1200w" width="1200">
+        </a>
+    </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            
+            
+            
+            <a href="/categories/trail-running/" style="background-color: hsl(24, 60%, 84%); color: hsl(24, 60%, 15%);">
+                Trail Running
+            </a>
+        
+            
+            
+            
+            <a href="/categories/stock-analysis/" style="background-color: hsl(281, 60%, 84%); color: hsl(281, 60%, 15%);">
+                Stock Analysis
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/my-philosophy-of-dev/">데이터로 해석하는 삶: 니체와 트레일 러닝, 그리고 AI 개발</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            33살 개발자, 매일의 한계를 넘어서는 &#39;자기 극복(Übermensch)&#39;의 여정
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    <footer class="article-meta">
+        
+            <div class="inline-meta">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                    <time class="article-time--published" datetime='2026-04-03T00:00:00Z'>Friday, April 3, 2026</time>
+                
+
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                    <time class="article-time--reading">
+                        2 minutes read
+                    </time>
+                
+            </div>
+        
+
+        
+
+        
+    </footer>
+    
+</div>
+
+</header>
+
+    
+
+    <section class="article-content">
+    
+    
+    <p>새벽 5시, 알람이 울리면 두 가지 선택지가 놓인다. 따뜻한 이불속으로 다시 들어갈 것인가, 아니면 러닝화를 신고 밖으로 나갈 것인가.</p>
+<p>33살, 통신사 결제 시스템을 다루는 데일리 워크와 AI 주식 분석이라는 사이드 프로젝트 사이에서 나는 종종 프리드리히 니체(Friedrich Nietzsche)의 &lsquo;위버멘쉬(Übermensch, 초인)&lsquo;를 떠올린다. 니체가 말한 자기 극복의 과정은, 오류를 뿜어내는 코드를 마주하거나 70km 트레일 러닝을 준비하며 숨이 턱끝까지 차오르는 순간과 묘하게 닿아 있다.</p>
+<h3 id="-코딩-어둠-속에서-패턴을-찾는-일">💻 코딩: 어둠 속에서 패턴을 찾는 일
+</h3><p>AI 모델을 학습시키고 주식 데이터의 노이즈 속에서 유의미한 시그널을 찾아내는 과정은 끝없는 가설과 검증의 반복이다.
+수십 번의 Epoch를 돌리며 Loss값이 떨어지기를 기다리는 시간은 마치 칠흑 같은 산길을 헤드랜턴 하나에 의지해 걷는 것과 같다. 당장 눈앞의 버그를 잡고 나면, 또 다른 아키텍처의 한계가 나를 비웃듯 기다리고 있다.</p>
+<p>하지만 그 막막함을 견뎌내고 마침내 시스템이 내가 의도한 대로 세상의 데이터를 해석해 낼 때, 그 찰나의 희열은 모든 피로를 잊게 만든다.</p>
+<h3 id="-70km-트레일-러닝-육체를-컴파일하는-시간">🏃‍♂️ 70km 트레일 러닝: 육체를 컴파일하는 시간
+</h3><p>트레일 러닝은 도로를 달리는 것과는 차원이 다르다. 진흙탕, 가파른 암릉, 예측할 수 없는 날씨까지. 70km라는 거리는 단순히 체력의 문제가 아니라 멘탈의 영역이다.
+오르막에서 심박수가 180을 찍을 때면 내 몸의 시스템이 마치 메모리 누수(Memory Leak)라도 난 것처럼 경고를 보낸다.</p>
+<p><em>&ldquo;이제 그만 멈추는 게 어때?&rdquo;</em></p>
+<p>하지만 그 지점에서 한 걸음을 더 내딛는 것. 그것이 바로 니체가 말한 &lsquo;기존의 나를 파괴하고 새로운 나로 넘어가는&rsquo; 과정 아닐까. 몸의 한계라는 Error를 Try-Catch로 묵묵히 받아내며 앞으로 나아가는 것이다.</p>
+<h3 id="-데이터로-세상을-해석한다는-것">☕ 데이터로 세상을 해석한다는 것
+</h3><p>AI 개발이 방대한 데이터 속에서 규칙을 찾아내는 일이라면, 트레일 러닝은 내 몸과 자연이 주고받는 수많은 아날로그 데이터를 온몸으로 해석해 내는 일이다.</p>
+<p>오늘도 나는 키보드를 두드리고, 러닝화 끈을 묶는다.
+끊임없이 나 자신을 디버깅하며, 어제보다 조금 더 나은 버전의 &lsquo;위버마인드(ubermind)&lsquo;로 업데이트하기 위해.</p>
+
+</section>
+
+
+    <footer class="article-meta article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/philosophy/">Philosophy</a>
+        
+            <a href="/tags/running/">Running</a>
+        
+            <a href="/tags/ai/">AI</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+        <div class="disqus-container">
+    
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 ubermind.dev
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="4.0.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+
+
+
+<script type="module">
+    import gallery from '\/ts\/gallery.js';
+
+    const articleContent = document.querySelector('.article-content');
+    const shouldLoad = articleContent && (articleContent.querySelectorAll('figure').length > 0 || articleContent.querySelectorAll('img.gallery-image').length > 0);
+    
+    if (shouldLoad) {
+        gallery(articleContent);
+
+        const PhotoSwipeLightbox = (await import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js")).default;
+        const styleHref = "https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.css";
+
+        const styleTag = document.createElement('link');
+        styleTag.rel = 'stylesheet';
+        styleTag.href = styleHref;
+        document.head.appendChild(styleTag);
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallerySelector: '.article-content',
+            childSelector: 'figure a.image-link',
+            pswpModule: () => import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js")
+        });
+        lightbox.init();
+    }
+</script>
+    
+
+            </main>
+        </div>
+        
+<script type="text/javascript" src="/ts/main.e7cb75dc18c6b0d83796629fb1ceda3f52008877045519467c554a24d55a522e.js" defer></script>
+
+
+    </body>
+</html>

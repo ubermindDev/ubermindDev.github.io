@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Running on ubermind.dev</title>
+        <link>https://ubermindDev.github.io/tags/running/</link>
+        <description>Recent content in Running on ubermind.dev</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ko-kr</language>
+        <lastBuildDate>Fri, 03 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://ubermindDev.github.io/tags/running/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>데이터로 해석하는 삶: 니체와 트레일 러닝, 그리고 AI 개발</title>
+            <link>https://ubermindDev.github.io/posts/my-philosophy-of-dev/</link>
+            <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://ubermindDev.github.io/posts/my-philosophy-of-dev/</guid>
+            <description>&lt;img src=&#34;https://ubermindDev.github.io/&#34; alt=&#34;Featured image of post 데이터로 해석하는 삶: 니체와 트레일 러닝, 그리고 AI 개발&#34; /&gt;&lt;p&gt;새벽 5시, 알람이 울리면 두 가지 선택지가 놓인다. 따뜻한 이불속으로 다시 들어갈 것인가, 아니면 러닝화를 신고 밖으로 나갈 것인가.&lt;/p&gt;&#xA;&lt;p&gt;33살, 통신사 결제 시스템을 다루는 데일리 워크와 AI 주식 분석이라는 사이드 프로젝트 사이에서 나는 종종 프리드리히 니체(Friedrich Nietzsche)의 &amp;lsquo;위버멘쉬(Übermensch, 초인)&amp;lsquo;를 떠올린다. 니체가 말한 자기 극복의 과정은, 오류를 뿜어내는 코드를 마주하거나 70km 트레일 러닝을 준비하며 숨이 턱끝까지 차오르는 순간과 묘하게 닿아 있다.&lt;/p&gt;&#xA;&lt;h3 id=&#34;-코딩-어둠-속에서-패턴을-찾는-일&#34;&gt;💻 코딩: 어둠 속에서 패턴을 찾는 일&#xD;&#xA;&lt;/h3&gt;&lt;p&gt;AI 모델을 학습시키고 주식 데이터의 노이즈 속에서 유의미한 시그널을 찾아내는 과정은 끝없는 가설과 검증의 반복이다.&#xA;수십 번의 Epoch를 돌리며 Loss값이 떨어지기를 기다리는 시간은 마치 칠흑 같은 산길을 헤드랜턴 하나에 의지해 걷는 것과 같다. 당장 눈앞의 버그를 잡고 나면, 또 다른 아키텍처의 한계가 나를 비웃듯 기다리고 있다.&lt;/p&gt;&#xA;&lt;p&gt;하지만 그 막막함을 견뎌내고 마침내 시스템이 내가 의도한 대로 세상의 데이터를 해석해 낼 때, 그 찰나의 희열은 모든 피로를 잊게 만든다.&lt;/p&gt;&#xA;&lt;h3 id=&#34;-70km-트레일-러닝-육체를-컴파일하는-시간&#34;&gt;🏃‍♂️ 70km 트레일 러닝: 육체를 컴파일하는 시간&#xD;&#xA;&lt;/h3&gt;&lt;p&gt;트레일 러닝은 도로를 달리는 것과는 차원이 다르다. 진흙탕, 가파른 암릉, 예측할 수 없는 날씨까지. 70km라는 거리는 단순히 체력의 문제가 아니라 멘탈의 영역이다.&#xA;오르막에서 심박수가 180을 찍을 때면 내 몸의 시스템이 마치 메모리 누수(Memory Leak)라도 난 것처럼 경고를 보낸다.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;이제 그만 멈추는 게 어때?&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;하지만 그 지점에서 한 걸음을 더 내딛는 것. 그것이 바로 니체가 말한 &amp;lsquo;기존의 나를 파괴하고 새로운 나로 넘어가는&amp;rsquo; 과정 아닐까. 몸의 한계라는 Error를 Try-Catch로 묵묵히 받아내며 앞으로 나아가는 것이다.&lt;/p&gt;&#xA;&lt;h3 id=&#34;-데이터로-세상을-해석한다는-것&#34;&gt;☕ 데이터로 세상을 해석한다는 것&#xD;&#xA;&lt;/h3&gt;&lt;p&gt;AI 개발이 방대한 데이터 속에서 규칙을 찾아내는 일이라면, 트레일 러닝은 내 몸과 자연이 주고받는 수많은 아날로그 데이터를 온몸으로 해석해 내는 일이다.&lt;/p&gt;&#xA;&lt;p&gt;오늘도 나는 키보드를 두드리고, 러닝화 끈을 묶는다.&#xA;끊임없이 나 자신을 디버깅하며, 어제보다 조금 더 나은 버전의 &amp;lsquo;위버마인드(ubermind)&amp;lsquo;로 업데이트하기 위해.&lt;/p&gt;&#xA;</description>
+        </item></channel>
+</rss>
