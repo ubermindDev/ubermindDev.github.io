@@ -4,43 +4,47 @@ title = "ubermind.dev"
 theme = "stack"
 
 [params]
-    description = "Building AI Stock Systems | IT Developer | Trail Runner"
+    description = "심연을 들여다보는 개발자 | 코드로 쓰는 차라투스트라"
+    customCSS = ["scss/custom.scss"]
     
-    # [인스타 느낌 1] 왼쪽 프로필 사이드바
+    # [차라투스트라의 사이드바]
     [params.sidebar]
         avatar = "https://github.com/ubermindDev.png"
         title = "ubermind"
-        subtitle = "데이터로 세상을 해석합니다 ☕ | AI Stock & Code | Trail Runner"
+        subtitle = "심연을 들여다보는 개발자 \n 코드로 쓰는 차라투스트라"
+        emoji = "🕳️"
 
-    # [인스타 느낌 2] 메인 화면 격자(Grid) 카드 레이아웃
+    # [미니멀리스트 카오스]
     [params.main]
-        layout = "grid" 
+        layout = "list" # grid보다 list가 글에 더 집중됨
         showPostReadingTime = true
 
-    # [인스타 느낌 3] 힙한 다크 모드 고정
+    # [The Abyss Look] 딥 다크 모드 고정
     [params.darkmode]
-        toggle = true
+        toggle = false # 토글을 없애고 영원한 심연(다크모드)으로 고정
         default = "dark"
 
-    # 소셜 아이콘 (에러 방지를 위해 간단히 설정)
+    # 소셜 아이콘
     [[params.socialIcons]]
         name = "github"
         url = "https://github.com/ubermindDev"
 
-# 메뉴 설정 (사이드바 버튼)
+# 메뉴 설정
 [[menu.main]]
-    name = "Feed"
-    url = "/"
-    weight = 1
-[[menu.main]]
-    name = "Archive"
+    name = "나의 투쟁 (Archives)"
     url = "/posts/"
-    weight = 2
+    weight = 1
 [[menu.main]]
     name = "Stock Analysis"
     url = "/categories/stock-analysis/"
-    weight = 3
+    weight = 2
 [[menu.main]]
     name = "Trail Running"
     url = "/categories/trail-running/"
-    weight = 4
+    weight = 3
+
+# 위젯 설정 (미니멀하게)
+[[params.widgets.homepage]]
+    type = "search"
+[[params.widgets.homepage]]
+    type = "archives"
