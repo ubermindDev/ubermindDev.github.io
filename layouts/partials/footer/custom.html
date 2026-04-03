@@ -2,3 +2,36 @@
 <video autoplay loop muted playsinline id="bg-video">
     <source src="/bg-trail.mp4" type="video/mp4">
 </video>
+
+<!-- 배경 음악 -->
+<audio id="bg-music" loop>
+    <source src="/bg-bgm.m4a" type="audio/mp4">
+</audio>
+
+<!-- 음악 컨트롤 버튼 -->
+<button id="music-toggle" class="music-btn">
+    <span id="music-icon">🎵 Play BGM</span>
+</button>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const music = document.getElementById('bg-music');
+        const btn = document.getElementById('music-toggle');
+        const icon = document.getElementById('music-icon');
+        
+        // 볼륨을 은은하게 (30%)
+        music.volume = 0.3;
+
+        btn.addEventListener('click', () => {
+            if (music.paused) {
+                music.play();
+                icon.innerText = '🔊 BGM ON';
+                btn.classList.add('playing');
+            } else {
+                music.pause();
+                icon.innerText = '🎵 BGM OFF';
+                btn.classList.remove('playing');
+            }
+        });
+    });
+</script>

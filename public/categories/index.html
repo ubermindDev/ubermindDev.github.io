@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
 
 
-<link rel="stylesheet" href="/scss/style.min.e5f72730c383b2ffc6e88ef1be511f53398eed8ad81ea761b122b64fa46f8a7a.css"><meta property='og:title' content="Categories">
+<link rel="stylesheet" href="/scss/style.min.f69ba283480e072309f12d20c551f11f9f62ef860ea892f776677c0bd43be109.css"><meta property='og:title' content="Categories">
 <meta property='og:description' content="심연을 들여다보는 개발자 | 코드로 쓰는 차라투스트라">
 <meta property='og:url' content='https://ubermindDev.github.io/categories/'>
 <meta property='og:site_name' content='ubermind.dev'>
@@ -201,6 +201,39 @@
 <video autoplay loop muted playsinline id="bg-video">
     <source src="/bg-trail.mp4" type="video/mp4">
 </video>
+
+
+<audio id="bg-music" loop>
+    <source src="/bg-bgm.m4a" type="audio/mp4">
+</audio>
+
+
+<button id="music-toggle" class="music-btn">
+    <span id="music-icon">🎵 Play BGM</span>
+</button>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const music = document.getElementById('bg-music');
+        const btn = document.getElementById('music-toggle');
+        const icon = document.getElementById('music-icon');
+        
+        
+        music.volume = 0.3;
+
+        btn.addEventListener('click', () => {
+            if (music.paused) {
+                music.play();
+                icon.innerText = '🔊 BGM ON';
+                btn.classList.add('playing');
+            } else {
+                music.pause();
+                icon.innerText = '🎵 BGM OFF';
+                btn.classList.remove('playing');
+            }
+        });
+    });
+</script>
 
     </body>
 </html>
