@@ -7,13 +7,23 @@
     --base-font-family: 'Fira Code', 'Consolas', monospace; 
 }
 
-/* 배경 이미지 세팅 */
+/* 배경 비디오 요소 세팅 */
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+    object-fit: cover;
+    filter: grayscale(40%) contrast(120%); /* 약간 거칠고 철학적인 분위기를 위해 흑백/대비 효과 추가 */
+}
+
+/* 배경 이미지 세팅 (비디오 뒤에 깔리는 예비용) */
 body[data-scheme='dark'], body {
-    background-image: url('/bg-abyss-ai.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-color: #0d0d0d;
 }
 
 /* 텍스트 가독성을 위한 다크 오버레이 (조금 더 어둡게) */
@@ -21,7 +31,7 @@ body::before {
     content: "";
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.7); /* 기존 0.6 -> 0.7로 변경하여 UI를 돋보이게 함 */
+    background: rgba(0, 0, 0, 0.7); /* 비디오 위에 깔리는 어두운 장막 */
     z-index: -1;
 }
 
