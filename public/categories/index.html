@@ -203,7 +203,7 @@
 </video>
 
 
-<audio id="bg-music" loop>
+<audio id="bg-music" loop autoplay>
     <source src="/bg-bgm.m4a" type="audio/mp4">
 </audio>
 
@@ -220,6 +220,21 @@
         
         
         music.volume = 0.3;
+
+        
+        const playPromise = music.play();
+        if (playPromise !== undefined) {
+            playPromise.then(_ => {
+                
+                icon.innerText = '🔊 BGM ON';
+                btn.classList.add('playing');
+            }).catch(error => {
+                
+                icon.innerText = '🎵 Play BGM';
+                btn.classList.remove('playing');
+                console.log("Autoplay blocked by browser. User interaction required.");
+            });
+        }
 
         btn.addEventListener('click', () => {
             if (music.paused) {

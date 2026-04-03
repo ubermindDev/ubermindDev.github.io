@@ -4,7 +4,7 @@
 </video>
 
 <!-- 배경 음악 -->
-<audio id="bg-music" loop>
+<audio id="bg-music" loop autoplay>
     <source src="/bg-bgm.m4a" type="audio/mp4">
 </audio>
 
@@ -21,6 +21,21 @@
         
         // 볼륨을 은은하게 (30%)
         music.volume = 0.3;
+
+        // 자동재생 시도 (브라우저 정책 처리)
+        const playPromise = music.play();
+        if (playPromise !== undefined) {
+            playPromise.then(_ => {
+                // 자동재생 성공 시 UI 업데이트
+                icon.innerText = '🔊 BGM ON';
+                btn.classList.add('playing');
+            }).catch(error => {
+                // 브라우저 정책(Autoplay Policy)으로 차단된 경우
+                icon.innerText = '🎵 Play BGM';
+                btn.classList.remove('playing');
+                console.log("Autoplay blocked by browser. User interaction required.");
+            });
+        }
 
         btn.addEventListener('click', () => {
             if (music.paused) {
