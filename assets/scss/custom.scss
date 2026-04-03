@@ -1,5 +1,6 @@
 /* --- 프리미엄 웹 폰트 (Pretendard) 임포트 --- */
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+@import "bento.scss";
 
 /* --- 전역 폰트 적용 --- */
 :root, :root[data-scheme='dark'], :root[data-scheme='light'] {

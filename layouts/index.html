@@ -1,0 +1,80 @@
+{{ define "main" }}
+    <!-- Hero Section (Technical Editorial Style) -->
+    <section class="editorial-hero">
+        <div class="hero-content">
+            <div class="hero-label">The Ubermind Journal</div>
+            <h1 class="hero-title">
+                데이터와 코드로 <br/>
+                <span class="hero-gradient">세상을 해석합니다.</span>
+            </h1>
+            <p class="hero-subtitle">
+                AI Stock Analysis, Trail Running, 그리고 개발자로서의 끝없는 자기 극복(Übermensch)에 대한 궤적.
+            </p>
+        </div>
+        <div class="hero-status">
+            <div class="status-card glass-panel">
+                <div class="status-header">
+                    <div class="status-dot"></div>
+                    <span>System Status: Optimized</span>
+                </div>
+                <div class="status-body">
+                    <p>&gt; core_engine</p>
+                    <p class="highlight">ubermind-ai-v1.0</p>
+                    <p>&gt; last_build</p>
+                    <p class="highlight">{{ now.Format "2006-01-02 15:04:05" }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Grid Posts -->
+    {{- $paginator := partial "helper/paginator.html" . -}}
+    <section class="bento-grid">
+        {{ range $index, $element := $paginator.Pages }}
+            <article class="bento-item glass-panel {{ if eq $index 0 }}featured{{ end }}">
+                <a class="bento-link" href="{{ .RelPermalink }}"></a>
+                
+                {{ if eq $index 0 }}
+                    {{ if .Params.image }}
+                        <div class="bento-image">
+                            <!-- Hugo Image Processing could be used, but direct src is fine for the requested style -->
+                            <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+                            <div class="bento-badge">FEATURED</div>
+                        </div>
+                    {{ end }}
+                {{ end }}
+                
+                <div class="bento-content">
+                    <div class="bento-meta">
+                        <div class="meta-left">
+                            {{ if .Params.categories }}
+                                <span class="bento-category">{{ index .Params.categories 0 | upper }}</span>
+                            {{ else }}
+                                <span class="bento-category">LOG</span>
+                            {{ end }}
+                        </div>
+                        <span class="bento-date">{{ .Date.Format "JAN 02, 2006" }}</span>
+                    </div>
+                    
+                    <h2 class="bento-title">{{ .Title }}</h2>
+                    <p class="bento-summary">{{ .Summary | truncate 120 }}</p>
+                    
+                    <div class="bento-footer">
+                        <span class="read-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            {{ .ReadingTime }} min read
+                        </span>
+                        <span class="read-more">Read &rarr;</span>
+                    </div>
+                </div>
+            </article>
+        {{ end }}
+    </section>
+
+    {{- partial "pagination.html" . -}}
+    {{- partial "footer/footer" . -}}
+{{ end }}
+
+{{ define "right-sidebar" }}
+    {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
+{{ end }}
