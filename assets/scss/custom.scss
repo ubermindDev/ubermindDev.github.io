@@ -1,13 +1,60 @@
-:root[data-scheme='dark'] { 
-    --body-background: transparent; 
-    --card-background: rgba(15, 15, 15, 0.65); /* 투명도를 더 높여서 텍스트 집중도를 올림 */
-    --accent-color: #E67E22; 
-    --text-color: #e2e8f0; /* 약간 쿨톤의 밝은 회색으로 가독성 극대화 */
-    --title-font-family: 'Georgia', 'Times New Roman', serif; 
-    --base-font-family: 'Fira Code', 'Consolas', monospace; 
+/* --- 프리미엄 웹 폰트 (Pretendard) 임포트 --- */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+/* --- 전역 폰트 적용 --- */
+:root, :root[data-scheme='dark'], :root[data-scheme='light'] {
+    --title-font-family: 'Pretendard', sans-serif; 
+    --base-font-family: 'Pretendard', sans-serif; 
 }
 
-/* --- 1. 배경 비디오 톤 앤 매너 --- */
+/* =========================================
+   다크 모드 (Dark Mode - The Abyss)
+========================================= */
+:root[data-scheme='dark'] { 
+    --body-background: transparent; 
+    --card-background: rgba(15, 15, 15, 0.65); 
+    --accent-color: #E67E22; 
+    --text-color: #e2e8f0;
+    --title-color: #ffffff;
+    --menu-text-color: #9ca3af;
+}
+
+body[data-scheme='dark']::before {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+body[data-scheme='dark'] #bg-video {
+    filter: grayscale(70%) contrast(110%) brightness(60%); 
+}
+
+/* =========================================
+   라이트 모드 (Light Mode - Morning Trail)
+========================================= */
+:root[data-scheme='light'] { 
+    --body-background: transparent; 
+    --card-background: rgba(255, 255, 255, 0.85); /* 밝은 유리 질감 */
+    --accent-color: #d35400; 
+    --text-color: #1f2937; /* 진한 회색 */
+    --title-color: #111827; /* 거의 검은색 */
+    --menu-text-color: #4b5563;
+}
+
+body[data-scheme='light']::before {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+body[data-scheme='light'] #bg-video {
+    filter: grayscale(20%) contrast(100%) brightness(95%); 
+}
+
+/* =========================================
+   공통 UI 구조 (Glassmorphism & Layout)
+========================================= */
+body {
+    background-color: transparent;
+    color: var(--text-color);
+}
+
 #bg-video {
     position: fixed;
     right: 0;
@@ -18,45 +65,37 @@
     height: auto;
     z-index: -2;
     object-fit: cover;
-    /* 흑백톤을 더 강하게 하고 밝기를 낮춰 글씨가 묻히지 않게 함 */
-    filter: grayscale(70%) contrast(110%) brightness(60%); 
+    transition: filter 0.5s ease;
 }
 
-body[data-scheme='dark'], body {
-    background-color: #050505;
-    color: var(--text-color);
-}
-
-/* 비디오 위 그라데이션 오버레이 (가운데는 살짝 밝고 가장자리는 어둡게 하여 깊이감 형성) */
 body::before {
     content: "";
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.85) 100%);
     z-index: -1;
+    transition: background 0.5s ease;
 }
 
-/* --- 2. 글래스모피즘(UI 박스) 고급화 --- */
+/* 박스 디자인 (카드, 사이드바 등) */
 .left-sidebar, .article-list article, .article-page {
-    background: rgba(18, 18, 18, 0.55) !important;
-    backdrop-filter: blur(16px); /* 블러를 강하게 주어 뒷배경 노이즈 제거 */
+    background: var(--card-background) !important;
+    backdrop-filter: blur(16px); 
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.05); /* 아주 얇고 은은한 테두리 */
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4); /* 묵직한 그림자 */
-    border-radius: 16px; /* 라운드 처리로 부드러운 느낌 */
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 1px solid rgba(128, 128, 128, 0.15); /* 라이트/다크 모두 어울리는 테두리 */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.5s ease;
 }
 
-/* 글 목록에 마우스 올렸을 때 살짝 떠오르는 효과 */
 .article-list article:hover {
     transform: translateY(-4px);
-    border-color: rgba(230, 126, 34, 0.3);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+    border-color: var(--accent-color);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
 }
 
-/* --- 3. 타이포그래피 (글씨) 가독성 극대화 --- */
+/* 폰트 및 텍스트 적용 */
 h1, h2, h3, .article-title {
-    color: #ffffff !important;
+    color: var(--title-color) !important;
     letter-spacing: -0.5px;
     font-weight: 700;
 }
@@ -64,38 +103,38 @@ h1, h2, h3, .article-title {
 .article-content p {
     line-height: 1.8;
     font-size: 1.05rem;
-    color: #d1d5db;
+    color: var(--text-color);
 }
 
-/* --- 4. 메뉴 시인성 세련되게 개선 --- */
+/* 메뉴 디자인 */
 .menu li a {
     transition: all 0.2s ease;
     border-left: 3px solid transparent;
     padding-left: 15px;
-    color: #9ca3af;
+    color: var(--menu-text-color);
 }
 .menu li a:hover {
-    background: rgba(255, 255, 255, 0.05);
-    color: #ffffff;
-    border-left: 3px solid rgba(230, 126, 34, 0.5);
+    background: rgba(128, 128, 128, 0.1);
+    color: var(--title-color);
+    border-left: 3px solid var(--accent-color);
 }
 .menu li.current a, .menu li.active a {
-    background: linear-gradient(90deg, rgba(230,126,34,0.15) 0%, transparent 100%);
-    color: #E67E22 !important;
-    border-left: 3px solid #E67E22 !important;
+    background: rgba(230,126,34,0.1);
+    color: var(--accent-color) !important;
+    border-left: 3px solid var(--accent-color) !important;
     font-weight: bold;
 }
 
-/* --- 5. BGM 버튼 미적 완성도 --- */
+/* BGM 버튼 디자인 */
 #music-toggle {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background: rgba(15, 15, 15, 0.8);
+    background: var(--card-background);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: #d1d5db;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    color: var(--text-color);
     padding: 12px 24px;
     border-radius: 50px;
     cursor: pointer;
@@ -105,35 +144,30 @@ h1, h2, h3, .article-title {
     letter-spacing: 1px;
     z-index: 999;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     gap: 8px;
 }
 #music-toggle:hover {
-    background: rgba(230, 126, 34, 0.2);
-    border-color: rgba(230, 126, 34, 0.5);
-    color: #ffffff;
+    background: rgba(230, 126, 34, 0.15);
+    border-color: var(--accent-color);
+    color: var(--title-color);
     transform: translateY(-2px);
 }
 #music-toggle.playing {
-    color: #E67E22;
-    border-color: #E67E22;
-    box-shadow: 0 0 20px rgba(230, 126, 34, 0.2);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
-/* --- 6. 사이드바 프로필 정돈 --- */
-.left-sidebar {
-    padding: 2.5rem 2rem;
-}
+/* 프로필 이미지 */
 .sidebar-profile .avatar {
-    border-radius: 30%; /* 완전 원형보다 트렌디한 스퀘어-라운드 쉐입 */
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 25%; /* 스퀘어-라운드 */
+    border: 2px solid rgba(128, 128, 128, 0.2);
 }
 .sidebar-profile .site-subtitle {
-    color: #9ca3af;
+    color: var(--menu-text-color);
     line-height: 1.6;
     margin-top: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }

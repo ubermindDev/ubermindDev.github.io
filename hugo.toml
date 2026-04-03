@@ -19,9 +19,9 @@ theme = "stack"
         layout = "list" # grid보다 list가 글에 더 집중됨
         showPostReadingTime = true
 
-    # [The Abyss Look] 딥 다크 모드 고정
+    # [The Abyss Look] 다크/라이트 모드 지원
     [params.darkmode]
-        toggle = false # 토글을 없애고 영원한 심연(다크모드)으로 고정
+        toggle = true # 토글을 살려서 사용자가 선택할 수 있게 함
         default = "dark"
 
     # 소셜 아이콘
